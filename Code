@@ -24,11 +24,11 @@ function redcube(){
 }
 function redcubes(){
     fill(222,95,82)
-  square(240,-150,15)
+  square(random(200,240),random(-150,-120),15)
       fill(222,95,82)
-  square(220,-145,15)
+  square(random(220,240),random(-145,-100),15)
         fill(222,95,82)
-  square(250,-100,15)
+  square(random(250,280),random(-100,-80),15)
 }
 
 function greenrectang(){
@@ -73,7 +73,7 @@ function setup() {
   background(160);
   angleMode(DEGREES);
   setupStandardAxes();
-    rotate(30);
+    rotate(random(20,40));
               drawGridLines()
   for (var i = 0; i <NUM_ROTATIONS; i++){
      square(200,2*STEP,10)
@@ -83,7 +83,7 @@ function setup() {
     greycrube()
     redcubes()
     drawGridLines()
-translate(-60, 0);
+translate(-720/NUM_ROTATIONS, 0);
   }
   
   
