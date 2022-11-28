@@ -51,6 +51,19 @@ function redcubeincube(){
    square(210,20,15)
 }
 
+function whitecube(){
+  
+      fill (255,255,255)
+  square(250,150,20)
+}
+
+function bottomwhitecube(){
+  
+      fill (255,255,255)
+  square(250,-170,20)
+}
+
+
 function drawGridLines(){
   
   fill(55,80,60)
@@ -82,6 +95,8 @@ function setup() {
     greenrectang()
     greycrube()
     redcubes()
+    whitecube()
+    bottomwhitecube()
     drawGridLines()
 translate(-720/NUM_ROTATIONS, 0);
   }
